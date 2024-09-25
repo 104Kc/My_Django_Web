@@ -8,20 +8,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .profile-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+        .profile-header {
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .student-name {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .student-id {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .profile-body {
+            text-align: left;
+        }
+        .profile-body h2 {
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="profile-container">
         <div class="profile-header">
-            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-            <h1 class="student-name">ชื่อ นามสกุล</h1>
-            <p class="student-id">รหัสนักศึกษา: 123456789</p>
+            <img src="https://avatars.githubusercontent.com/u/148408203?s=400&u=48973ecf607a0c9afbf7ad5037a7f24e0bf352c2&v=4" alt="Profile Picture" class="profile-pic">
+            <h1 class="student-name">นาย เกียรติศักดิ์ ช่างทอง</h1>
+            <p class="student-id">รหัสนักศึกษา: 6612732104</p>
         </div>
         <div class="profile-body">
             <h2>เกี่ยวกับฉัน</h2>
             <p>รายละเอียดเกี่ยวกับนักศึกษา เช่น งานอดิเรก ความสนใจ ฯลฯ</p>
             <h2>การศึกษา</h2>
             <ul>
-                <li>มหาวิทยาลัย: ชื่อมหาวิทยาลัย</li>
+                <li>มหาวิทยาลัย: ชื่อมหาวิทยาลัย  </li>
                 <li>คณะ: ชื่อคณะ</li>
                 <li>สาขา: ชื่อสาขา</li>
             </ul>
@@ -38,5 +82,3 @@
 </html>
 
 {% endblock content %}
-
-
